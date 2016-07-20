@@ -1,0 +1,45 @@
+<!-- //1. Dibujar el poste
+//2. Determinar la palabra
+//3. Pasos para ahorcar (dibujar cuerpo)
+//4. Elegir las letras (adivinar)
+		Si la letra existe:
+					Enlistarla
+		Si no
+					Agrego un trazo al ahorcado
+
+		Si ya dibuje al ahorcado completo
+					Perdi
+		Si adivine la palabra
+					Gane -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Ahorcado</title>
+	<style type = "text/css">
+      body{
+        background-color: green;
+        height: 250px;
+        margin: auto;
+        width: 400px;
+      }
+    </style>
+	<script type="text/javascript" src="ahorca.js"></script>
+</head>
+<body>
+	<h1>AHORCADO con Gordion</h1>
+	<canvas id="c"></canvas>
+	<p>
+		Elige una letra:
+		<input type="text" id="letra" />
+		<input type="button" id="boton" value="JUGATELA!!" />
+	</p>
+	<h2 id="pista"></h2>
+	<h4>Letras Escogidas:</h4>
+    <p id="escogidas"></p>
+	<script type="text/javascript">
+	iniciar();
+	</script>
+</body>
+</html>
